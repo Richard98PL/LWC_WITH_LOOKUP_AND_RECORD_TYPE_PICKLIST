@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>leadFromContactPardotButton</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LWC Custom Label</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>leadFromContactPardotError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LWC Custom Label</shortDescription>
+        <value>Unexpected error. Please contact your Salesforce administrator.</value>
+    </labels>
+    <labels>
+        <fullName>leadFromContactPardotSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LWC Custom Label</shortDescription>
+        <value>New Lead record created.</value>
+    </labels>
+    <labels>
+        <fullName>leadFromContactPardotSynchronizationMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LWC Custom Label</shortDescription>
+        <value>This contact is not synchronized with Pardot.</value>
+    </labels>
+    <labels>
+        <fullName>leadFromContactPardotTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LWC Custom Label</shortDescription>
+        <value>Create Lead and Campaign Member</value>
+    </labels>
+    <labels>
+        <fullName>leadFromContactPardotWarning</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LWC Custom Label</shortDescription>
+        <value>Already existing Campaign Member for this Campaign. No Lead has been created.</value>
+    </labels>
+</CustomLabels>

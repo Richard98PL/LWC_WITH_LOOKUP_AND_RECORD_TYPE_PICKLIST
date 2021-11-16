@@ -1,0 +1,44 @@
+<template>
+    <div class="slds-box slds-is-relative">
+        <div if:true={isPardotSynchronized}>
+            <lightning-spinner if:true={isLoading} alternative-text="Loading" size="small"></lightning-spinner>
+
+            <div class = "slds-align_absolute-center">
+                <lightning-card variant="basic" icon-name="standard:lead">
+                    <h1 slot="title" class="cardLabel">{labels.cardTitle}</h1>
+                </lightning-card>
+            </div>
+
+            <div style = "padding: 2%;" class = "slds-align_absolute-center">
+                <lightning-combobox name="progress"
+                                    label="Lead Record Type"
+                                    value={value}
+                                    placeholder="Select a record type..."
+                                    options={options}
+                                    onchange={handleChange}
+                                    dropdown-alignment="auto">
+                </lightning-combobox>
+            </div>
+
+            <div style = "padding: 2%;" class = "slds-align_absolute-center">
+                <p class="slds-p-horizontal_small">
+                    <c-search-component
+                            obj-name="Campaign"
+                            icon-name="standard:campaign"
+                            label-name="Campaign"
+                            placeholder="Search"
+                            onlookup={handleLookup}
+                            fields = campaignFields>
+                    </c-search-component>
+                </p>
+            </div>
+
+            <div id='buttons' style = "padding: 2%; text-align:center; padding-top: 4%;" class = "slds-align_absolute-center">
+                <lightning-button disabled={disableButton} variant="brand" label={labels.button} title={labels.button} onclick={handleButtonClick} class="slds-m-left_x-small"></lightning-button>
+            </div>
+        </div>
+        <div if:false={isPardotSynchronized} class = "slds-align_absolute-center">
+            {labels.synchronizationMessage}
+        </div>
+    </div>
+</template>
